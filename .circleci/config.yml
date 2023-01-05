@@ -1,0 +1,15 @@
+version: 2.1
+
+jobs:
+  hello-world:
+    docker:
+      - image: cimg/node:18.12.1
+    steps:
+      - checkout
+      - run: echo 'Hello World'
+
+workflows:
+  my-workflow:
+    jobs:
+      - hello-world
+# VS Code Extension Version: 1.5.1
