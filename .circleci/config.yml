@@ -1,15 +1,16 @@
 version: 2.1
 
 jobs:
-  hello-world:
+  test:
     docker:
       - image: cimg/node:18.12.1
     steps:
       - checkout
-      - run: echo 'Hello World'
+      - run: yarn install
+      - run: yarn test
 
 workflows:
-  my-workflow:
+  ci:
     jobs:
-      - hello-world
+      - test
 # VS Code Extension Version: 1.5.1
