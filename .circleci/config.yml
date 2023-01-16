@@ -1,6 +1,13 @@
 version: 2.1
 
 jobs:
+  lint:
+    docker:
+      - image: cimg/node:18.12.1
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn lint
   test:
     docker:
       - image: cimg/node:18.12.1
@@ -12,5 +19,6 @@ jobs:
 workflows:
   ci:
     jobs:
+      - lint
       - test
 # VS Code Extension Version: 1.5.1
