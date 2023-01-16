@@ -1,6 +1,30 @@
 $lightBlue: #a8dadc;
+$primaryText: #1d3557;
 
 .Home {
-  height: 1080px;
+  padding: 65px 16px 16px;
   background-color: $lightBlue;
+}
+
+.Home__Name {
+  margin: 0 0 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #457b9d;
+  text-align: center;
+}
+
+.Home__ProfessionTitle {
+  margin: 0 0 45px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  color: $primaryText;
+  text-align: center;
+}
+
+.Home__Illustration {
+  display: block;
+  margin: 0 auto 48px;
 }
