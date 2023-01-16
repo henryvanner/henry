@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - run: yarn lint
+      - run: yarn style
   lint:
     docker:
       - image: cimg/node:18.12.1
