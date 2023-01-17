@@ -22,11 +22,28 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn test
+  deploy:
+    docker:
+      - image: cimg/node:18.12.1
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn build
+      - run: surge --project ./out --domain henry-aquino.surge.sh
 
 workflows:
-  ci:
+  ci-cd:
     jobs:
       - lint
       - style
       - test
+      - hold:
+          type: approval
+          requires:
+            - lint
+            - style
+            - test
+      - deploy:
+          requires:
+            - hold
 # VS Code Extension Version: 1.5.1
