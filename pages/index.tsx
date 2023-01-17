@@ -11,6 +11,10 @@ export default function Home() {
         src={HomeIllustration}
         alt='Funcy Desktop'
       />
+      <div className='Home__Buttons'>
+        <button className='Button Button--red'>PROJECTS</button>
+        <button className='Button Button--blue'>CURRICULUM</button>
+      </div>
     </div>
   )
 }

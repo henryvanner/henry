@@ -1,0 +1,18 @@
+.Button {
+  border: none;
+  border-radius: 35px;
+  width: 209px;
+  height: 58px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+}
+
+.Button--red {
+  background-color: #e63946;
+}
+
+.Button--blue {
+  background-color: #457b9d;
+}
