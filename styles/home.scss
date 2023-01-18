@@ -1,5 +1,7 @@
 $lightBlue: #a8dadc;
 $primaryText: #1d3557;
+$secondaryText: #457b9d;
+$mediumDeviceWidth: 48em;
 
 .Home {
   padding: 65px 16px 170px 16px;
@@ -11,7 +13,7 @@ $primaryText: #1d3557;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #457b9d;
+  color: $secondaryText;
   text-align: center;
 }
 
@@ -35,7 +37,7 @@ $primaryText: #1d3557;
   align-items: center;
   row-gap: 32px;
 
-  @media (min-width: 40em) {
+  @media (min-width: $mediumDeviceWidth) {
     justify-content: center;
     flex-direction: row;
     align-items: initial;
