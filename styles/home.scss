@@ -1,6 +1,6 @@
 $lightBlue: #a8dadc;
-$primaryText: #1d3557;
-$secondaryText: #457b9d;
+$primaryTextColor: #1d3557;
+$secondaryTextColor: #457b9d;
 $mediumDeviceWidth: 48em;
 
 .Home {
@@ -13,7 +13,7 @@ $mediumDeviceWidth: 48em;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: $secondaryText;
+  color: $secondaryTextColor;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ $mediumDeviceWidth: 48em;
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
-  color: $primaryText;
+  color: $primaryTextColor;
   text-align: center;
 }
 
