@@ -3,6 +3,10 @@
 .Home {
   padding: 65px 16px 170px 16px;
   background-color: variables.$lightBlue;
+
+  @media (min-width: variables.$mediumDeviceWidth) {
+    padding-top: 124px;
+  }
 }
 
 .Home__Name {
