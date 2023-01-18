@@ -1,3 +1,5 @@
+@use './variables.scss';
+
 .Button {
   border: none;
   border-radius: 35px;
@@ -6,13 +8,13 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
-  color: white;
+  color: variables.$white;
 }
 
 .Button--red {
-  background-color: #e63946;
+  background-color: variables.$desireRed;
 }
 
 .Button--blue {
-  background-color: #457b9d;
+  background-color: variables.$jellyBeanBlue;
 }
