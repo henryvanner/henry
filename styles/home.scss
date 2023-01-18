@@ -1,11 +1,8 @@
-$lightBlue: #a8dadc;
-$primaryTextColor: #1d3557;
-$secondaryTextColor: #457b9d;
-$mediumDeviceWidth: 48em;
+@use './variables.scss';
 
 .Home {
   padding: 65px 16px 170px 16px;
-  background-color: $lightBlue;
+  background-color: variables.$lightBlue;
 }
 
 .Home__Name {
@@ -13,7 +10,7 @@ $mediumDeviceWidth: 48em;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: $secondaryTextColor;
+  color: variables.$secondaryTextColor;
   text-align: center;
 }
 
@@ -22,7 +19,7 @@ $mediumDeviceWidth: 48em;
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
-  color: $primaryTextColor;
+  color: variables.$primaryTextColor;
   text-align: center;
 }
 
@@ -37,7 +34,7 @@ $mediumDeviceWidth: 48em;
   align-items: center;
   row-gap: 32px;
 
-  @media (min-width: $mediumDeviceWidth) {
+  @media (min-width: variables.$mediumDeviceWidth) {
     justify-content: center;
     flex-direction: row;
     align-items: initial;
